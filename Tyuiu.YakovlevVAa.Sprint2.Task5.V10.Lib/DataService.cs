@@ -60,6 +60,8 @@ namespace Tyuiu.YakovlevVAa.Sprint2.Task5.V10.Lib
             if ((n < daysInMonth) && (n > 1))
             {
                 PreviousDay = n - 1;
+                PreviousYear = g; 
+                PreviousMonth = m;
             }
             if (n > daysInMonth)
             {
@@ -73,7 +75,9 @@ namespace Tyuiu.YakovlevVAa.Sprint2.Task5.V10.Lib
             }
             else
             {
-                PreviousMonth = m - 1;
+                PreviousDay = n - 1;
+                PreviousYear = g;
+                PreviousMonth = m;
             }
 
             return PreviousDay + "." + PreviousMonth + "." + PreviousYear + " Год";
