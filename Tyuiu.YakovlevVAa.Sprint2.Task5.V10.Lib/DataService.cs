@@ -80,6 +80,18 @@ namespace Tyuiu.YakovlevVAa.Sprint2.Task5.V10.Lib
                 PreviousMonth = m;
             }
 
+            if (((PreviousDay > 0)&&(PreviousDay<10))&&((PreviousMonth>0)&&(PreviousMonth<10)))
+            {
+                return "0"+PreviousDay + "." +"0"+ PreviousMonth +"." + PreviousYear + " Год";
+            }
+            if ((PreviousDay > 0) && (PreviousDay < 10))
+            {
+                return "0" + PreviousDay + "." + PreviousMonth + "." + PreviousYear + " Год";
+            }
+            if ((PreviousMonth > 0) && (PreviousMonth < 10))
+            {
+                return "0" + PreviousDay + "." + PreviousMonth + "." + PreviousYear + " Год";
+            }
             return PreviousDay + "." + PreviousMonth + "." + PreviousYear + " Год";
         }
     }
