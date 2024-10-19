@@ -11,7 +11,7 @@ namespace Tyuiu.YakovlevVAa.Sprint2.Task5.V10.Test
             int g = 2023;
             int m = 1;
             int n = 1;
-            Assert.AreEqual("31.12.2022 Год", ds.FindDateOfPreviousDay(g, m, n));
+            Assert.AreEqual("31.12.2022", ds.FindDateOfPreviousDay(g, m, n));
             
         }
     }
